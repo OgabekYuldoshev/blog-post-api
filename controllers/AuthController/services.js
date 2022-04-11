@@ -2,11 +2,11 @@ const { User } = require("../../models");
 const { HashedPassword } = require("../../services");
 
 class AuthServices {
-  async register({ first_name, last_name, email, password }) {
+  async register({ firstName, lastName, email, password }) {
     const hashed_pwd = await HashedPassword.hash(password);
     const user = await User.create({
-      first_name,
-      last_name,
+      firstName,
+      lastName,
       email,
       password: hashed_pwd,
     });
@@ -14,8 +14,8 @@ class AuthServices {
   }
 
   async login({ email, password }) {
-    const user = await User.findOne({ where: { email: email } });
-    console.log(email, password, user);
+
+    const user = await User.findOne({ where: { email } });
 
     if (user === undefined || user === null) {
       return {

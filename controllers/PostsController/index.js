@@ -2,7 +2,8 @@ const PostsServices = require("./services");
 
 class PostsController {
   async create(req, res) {
-    const data = { ...req?.body, author: req?.user?.id };
+    const data = { ...req?.body, author_id: req?.user?.id };
+    console.log(data)
     try {
       const post = await PostsServices.create(data);
       res.status(201).json(post);
