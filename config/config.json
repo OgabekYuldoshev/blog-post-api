@@ -1,23 +1,47 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "@nonym2001",
-    "database": "blogpost",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "username": "wyhbxbakclvrmx",
+    "password": "ea6d2e53782346a1318441655aa3990701ed17a8ed30acf8e5cf5f020b6c9597",
+    "database": "d6hctl0v020rm2",
+    "host": "ec2-52-3-60-53.compute-1.amazonaws.com",
+    "port": 5432,
+    "ssl": true,
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   },
   "test": {
-    "username": "postgres",
-    "password": "@nonym2001",
-    "database": "blogpost",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "username": "wyhbxbakclvrmx",
+    "password": "ea6d2e53782346a1318441655aa3990701ed17a8ed30acf8e5cf5f020b6c9597",
+    "database": "d6hctl0v020rm2",
+    "host": "ec2-52-3-60-53.compute-1.amazonaws.com",
+    "port": 5432,
+    "ssl": true,
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   },
   "production": {
-    "username": "postgres",
-    "password": "@nonym2001",
-    "database": "blogpost",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "username": "wyhbxbakclvrmx",
+    "password": "ea6d2e53782346a1318441655aa3990701ed17a8ed30acf8e5cf5f020b6c9597",
+    "database": "d6hctl0v020rm2",
+    "host": "ec2-52-3-60-53.compute-1.amazonaws.com",
+    "port": 5432,
+    "ssl": true,
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   }
 }
