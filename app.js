@@ -9,7 +9,7 @@ const swagger = require('./swagger')
 const indexRouter = require("./routes/index");
 const authRouter = require("./routes/auth");
 const postsRouter = require("./routes/posts");
-
+const cors = require('cors')
 
 const { sequelize } = require("./models");
 
@@ -31,7 +31,7 @@ const app = express();
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "jade");
 app.use('/api/swagger', swaggerUI.serve, swaggerUI.setup(swagger))
-
+app.use(cors())
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
